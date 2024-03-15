@@ -13,7 +13,7 @@
     --bg-color: #111111;
     --second-bg-color: #151515;
     --text-color: white;
-    --main-color: green;
+    --main-color: rgb(0, 100, 128);
 }
 
 html{
@@ -325,36 +325,7 @@ span{
     width: 50px;
 }
 
-/* .proyects{
-    background: var(--bg-color);
-    color: white;
-}
-.proyects h2{
-    margin-bottom: 5rem;
-    color: white;
-}
-.proyects-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-.proyects-box{
-    background-color: var(--main-color);
-    color: black;
-    height: 250px;
-    border-radius: 3rem;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.proyects img{
-    position: relative;
-    width: 32vw;
-    box-shadow: 0 0 25px var(--main-color);
-    top: 1rem;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-} */
+
 .proyects {
     background: var(--bg-color);
     color: white;
@@ -404,7 +375,7 @@ span{
 }
 
 .contenedor-skills{
-    background: linear-gradient(rgb(34, 139, 34), rgba(33, 16, 16, .8)), url("img/fondo-skills.jpg");
+    background: linear-gradient(rgb(34, 139, 34), rgba(33, 16, 16, .8));
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -626,5 +597,49 @@ span{
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
+        display: none;
     }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+       display: block;
+       font-size: 2rem;
+       margin: 3rem 0;
+       color: white;
+    }
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+    .home-content p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .home-img img{
+        width: 56vw;
+        margin-top: -2rem;
+    }
+    .contenedor-skills{
+        padding: 50px 20px;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about-content{
+        margin: 0 2rem 4rem;
+    }
+    .about img{
+        width: 52vw;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    
 }
