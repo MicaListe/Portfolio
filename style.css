@@ -13,7 +13,9 @@
     --bg-color: #111111;
     --second-bg-color: #151515;
     --text-color: white;
-    --main-color: rgb(0, 100, 128);
+    /* --main-color: rgb(0, 100, 128);  */
+    --main-color: rgb(34, 107, 128);
+    /* --secondmain-color: rgb(23, 133, 134)  */
 }
 
 html{
@@ -209,23 +211,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Full-Stack Web Developer";
+        content: "Programadora Web Full Stack";
     }
     21%,
     40%{
-        content: "Passionate Front-End Developer" ;
+        content: "Apasionada por el desarrollo Front End" ;
     }
     41%,
     60%{
-        content: "Continuous learning";
+        content: "Aprendizaje continuo";
     }
     61%,
     80%{
-        content:"Currently learning WordPress"
+        content:"Actualmente aprendiendo Wordpress"
     }
     81%,
     100%{
-        content: "In search of new projects";
+        content: "En busca de nuevos proyectos";
     }
 }
 
@@ -376,7 +378,9 @@ span{
 }
 
 .contenedor-skills{
-    background: linear-gradient(rgb(34, 139, 34), rgba(33, 16, 16, .8));
+   
+    /* background: linear-gradient(rgb(23, 133, 134), rgba(0, 0, 0, 0.8)); */
+    background: linear-gradient( rgb(0, 100, 128), rgba(0, 0, 0, 0.8));
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -421,7 +425,7 @@ span{
 }
 .contenedor-skills .skill .barra .barra-progreso3{
     background-color: #fff;
-    width: 90%;
+    width: 80%;
     height: 6px;
     animation: progreso3 2s forwards;
 }
@@ -430,6 +434,12 @@ span{
     width: 80%;
     height: 6px;
     animation: progreso4 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso5{
+    background-color: #fff;
+    width: 50%;
+    height: 6px;
+    animation: progreso5 2s forwards;
 }
 
 
@@ -456,7 +466,7 @@ span{
         width: 0;
     }
     100% {
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -465,7 +475,15 @@ span{
         width: 0;
     }
     100% {
-        width: 80%;
+        width: 70%;
+    }
+}
+@keyframes progreso5{
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
     }
 }
 
@@ -628,11 +646,20 @@ span{
         width: 56vw;
         margin-top: -2rem;
     }
+    .contenedor-skills h2{
+        font-size: 50px;
+    }
     .contenedor-skills{
         padding: 50px 20px;
     }
+    .contenedor-skills .skill .porcentaje{
+        font-size: 10px;
+    }
     .about{
         flex-direction: column-reverse;
+    }
+    .about h2{
+        font-size: 55px;
     }
     .about-content{
         margin: 0 2rem 4rem;
@@ -641,6 +668,12 @@ span{
         width: 52vw;
         margin-top: 1rem;
         margin-bottom: 3rem;
+    }
+    .skill{
+        font-size: 55px;
+    }
+    .contact h2{
+        font-size: 55px;
     }
     
 }
