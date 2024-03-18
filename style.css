@@ -194,7 +194,7 @@ span{
 .text-animation span::before{
     content: "FullStack Web Developer";
     color: var(--main-color);
-    animation: words 20s infinite;
+    animation: words 10s infinite;
 }
 .text-animation span::after{
     content:"";
